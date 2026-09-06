@@ -2,10 +2,7 @@
   'use strict';
 
   var KEY = 'gongboo_last_system_v1';
-  var URLS = {
-    bible: 'https://biblegongboo.github.io/bible/supabase/app/',
-    license: 'https://biblegongboo.github.io/license/app/'
-  };
+  var URLS = window.GONGBOO_CATALOG.urls;
   var root = {
     name: 'Select Study',
     children: [
