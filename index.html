@@ -12,8 +12,23 @@
 <body>
   <header class="top"><h1>GongBoo.org</h1></header>
   <main class="choices">
-    <a class="choice bible" href="https://biblegongboo.github.io/bible/supabase/app/">Bible<br>Study</a>
-    <a class="choice license" href="https://biblegongboo.github.io/license/app/">License<br>Study</a>
-  </main>
+  <a id="bibleLink" class="choice bible">
+    Bible<br>Study
+  </a>
+
+  <a id="licenseLink" class="choice license">
+    License<br>Study
+  </a>
+</main>
+
+<script src="./catalog.js"></script>
+
+<script>
+  document.getElementById('bibleLink').href =
+    window.GONGBOO_CATALOG.urls.bible;
+
+  document.getElementById('licenseLink').href =
+    window.GONGBOO_CATALOG.urls.license;
+</script>
 </body>
 </html>
